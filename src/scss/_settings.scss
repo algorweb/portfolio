@@ -10,15 +10,29 @@ html {
 
 .page {
   height: 100%;
-  font-family: var(--font-family, sans-serif);
+  font-family: "Ubuntu", "Arial", sans-serif;
   -webkit-text-size-adjust: 100%;
 }
 
 .page__body {
+  position: relative;
   margin: 0;
+  height: 100%;
   min-width: 320px;
-  min-height: 100%;
+  font-family: "Ubuntu", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
+  color: $text-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Arial", sans-serif;
 }
 
 img {
@@ -31,8 +45,19 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 30px;
+}
+
 .site-container {
+  display: flex;
+  flex-direction: column;
   overflow: hidden; // если используете на сайте position: sticky - уберите эту настройку
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
 }
 
 .is-hidden {
@@ -80,8 +105,8 @@ a {
 
 .container {
   margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);
+  padding: 0 15px;
+  max-width: 1140px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -104,4 +129,64 @@ a {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.gl-description-right {
+  padding: $gatter-top-mobile $gatter-out-mobile $gatter-bottom-mobile $gatter-in-mobile;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    padding-right: $gatter-out-tablet;
+    padding-left: $gatter-in-tablet;
+    width: $width-second-block-tablet;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: $gatter-top-desktop;
+    padding-right: $gatter-out-desktop;
+    padding-left: $gatter-in-desktop;
+    width: $width-second-block-desktop;
+  }
+}
+
+.gl-description-left {
+  padding: $gatter-top-mobile $gatter-out-mobile $gatter-bottom-mobile $gatter-in-mobile;
+  max-width: 100%;
+  box-sizing: border-box;
+
+  @media (min-width: $tablet) {
+    padding-right: $gatter-in-tablet;
+    padding-left: $gatter-out-tablet;
+    width: $width-second-block-tablet;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: $gatter-top-desktop;
+    padding-right: $gatter-in-desktop;
+    padding-left: $gatter-out-desktop;
+    width: $width-second-block-desktop;
+  }
+}
+
+.gl-title {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  color: $text-color;
+
+  @media (min-width: $desktop) {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+}
+
+.gl-title-text {
+  @media (min-width: $tablet) {
+    text-align: justify;
+  }
 }

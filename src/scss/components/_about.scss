@@ -1,0 +1,42 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  background-color: #f2f2f2;
+
+  &__photo {
+    max-width: 100%;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  &__text {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: $tablet) {
+  .about {
+    flex-direction: row;
+
+    &__photo {
+      order: 1;
+      width: $width-first-block-tablet;
+    }
+
+    &__description {
+      order: 2;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .about {
+    &__photo {
+      width: $width-first-block-desktop;
+    }
+  }
+}

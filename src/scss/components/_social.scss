@@ -1,0 +1,36 @@
+.social {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    display: block;
+    margin-right: 15px;
+    width: 16px;
+    height: 16px;
+
+    &:hover .social__icon {
+      fill: #fff;
+    }
+  }
+
+  &__icon {
+    fill: $button-color;
+    transition: all 0.4s ease 0s;
+  }
+
+  &__link {
+    display: block;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .social {
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+}

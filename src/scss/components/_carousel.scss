@@ -1,0 +1,149 @@
+.carousel {
+  overflow: auto;
+  padding: 20px 8%;
+  height: 100%;
+
+  &__item {
+    &--fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    border-radius: 0 5px 5px 0;
+    padding: 16px 5px;
+    width: auto;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    background-color: rgb(43, 50, 60);
+    transform: translateY(-50%);
+    transition: 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgba(43, 50, 60, 0.5);
+    }
+  }
+
+  &__prev {
+    left: 0;
+  }
+
+  &__next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+  }
+
+  &__caption {
+    position: relative;
+    font-weight: 400;
+    font-size: 24px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      display: block;
+      width: 10%;
+      height: 1px;
+      background-color: $text-color;
+    }
+  }
+
+  &__client,
+  &__proj-url,
+  &__url {
+    font-style: italic;
+  }
+
+  &__img-wrap {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-top: 50%;
+  }
+
+  &__img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -25%);
+  }
+
+  &__details-tech {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__details {
+    flex: 2 0 63%;
+  }
+
+  &__title {
+    border-left: 2px solid $text-color;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  &__tech {
+    flex: 1 0 34%;
+  }
+
+  &__tech-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__tech-item {
+    position: relative;
+    margin-left: 30px;
+
+    &::before {
+      content: "\2013";
+      position: absolute;
+      left: -14px;
+    }
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (min-width: $tablet) {
+  .carousel {
+    &__prev,
+    &__next {
+      padding: 16px;
+    }
+
+    &__details-tech {
+      flex-direction: row;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+  .carousel {
+    padding: 20px 170px;
+
+    &__details-tech {
+      flex-direction: row;
+    }
+  }
+}

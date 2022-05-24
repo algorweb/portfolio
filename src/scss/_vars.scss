@@ -1,12 +1,49 @@
 // если вы хотите использовать sass-переменные - удалите root
 // colors
-:root {
-  // base
-  --font-family: "Open Sans", sans-serif;
-  --content-width: 1170px;
-  --container-offset: 15px;
-  --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
+// :root {
+//   // base
+//   --font-family: "Open Sans", sans-serif;
+//   --content-width: 1170px;
+//   --container-offset: 15px;
+//   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
-  // colors
-  --light-color: #fff;
-}
+//   // colors
+//   --light-color: #fff;
+// }
+
+$accent-color: #2c303b;
+$main-color: #2c303b;
+$text-color: #2b303c;
+$button-color: #bec1c8;
+
+// Media
+$desktop: 1124px;
+$tablet: 768px;
+
+// Retina
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
+
+// Wigth of blocks
+$width-first-block-mobile: 100%;
+$width-second-block-mobile: 100%;
+$width-first-block-tablet: 50%;
+$width-second-block-tablet: 50%;
+$width-first-block-desktop: 38%;
+$width-second-block-desktop: 62%;
+
+// Left or right gatters of blocks
+$gatter-out-mobile: 10px;
+$gatter-in-mobile: 10px;
+$gatter-out-tablet: 40px;
+$gatter-in-tablet: 20px;
+$gatter-out-desktop: 15%;
+$gatter-in-desktop: 10%;
+
+// Top or bottom gatters of blocks
+$gatter-top-mobile: 30px;
+$gatter-bottom-mobile: 30px;
+$gatter-top-tablet: 30px;
+$gatter-bottom-tablet: 30px;
+$gatter-top-desktop: 60px;
+$gatter-bottom-desktop: 60px;

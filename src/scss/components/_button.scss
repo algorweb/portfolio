@@ -1,0 +1,30 @@
+.btn {
+  display: inline-block;
+  border: 1px solid $button-color;
+  border-radius: 5px;
+  padding: 10px 43px;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  color: $button-color;
+  transition: all 0.4s ease 0s;
+
+  &:hover {
+    border-color: $text-color;
+    color: #fff;
+    background-color: $text-color;
+    cursor: pointer;
+  }
+
+  &--color-dark {
+    border: 1px solid $text-color;
+    color: $text-color;
+  }
+
+  &--margin-bottom {
+    margin-bottom: 60px;
+  }
+
+  &--border-color-white:hover {
+    border-color: #fff;
+  }
+}

@@ -1,0 +1,44 @@
+.site-list {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  &__link {
+    display: block;
+    border-bottom: 2px solid transparent;
+    padding: 10px;
+    box-sizing: border box;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    text-decoration: none;
+    color: $button-color;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+
+    &:hover,
+    &:active {
+      border-bottom: 2px solid $text-color;
+    }
+  }
+}
+
+.no-js .site-list {
+  flex-flow: row wrap;
+  justify-content: center;
+  max-width: 100%;
+}
+
+@media (min-width: $tablet) {
+  .site-list {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    max-width: 100%;
+
+    &__link {
+      font-size: 12px;
+    }
+  }
+}
