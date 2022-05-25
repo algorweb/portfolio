@@ -1,5 +1,6 @@
 .projects {
   position: relative;
+  margin-bottom: 100px;
 
   &__container {
     position: relative;
@@ -34,6 +35,7 @@
   &__img {
     display: block;
     margin: 0;
+    width: 100%;
 
     &:first-child {
       width: 100%;
@@ -106,6 +108,8 @@
 
 @media (min-width: $tablet) {
   .projects {
+    margin-bottom: 50px;
+
     &__description {
       position: absolute;
       right: 0;

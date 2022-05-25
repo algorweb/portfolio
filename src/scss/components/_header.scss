@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  margin-bottom: 100px;
   width: 100%;
   height: 100vh;
   box-sizing: border-box;
@@ -78,6 +79,7 @@
 
 @media (min-width: $tablet) {
   .page-header {
+    margin-bottom: 50px;
     background-image: url("../img/bg_header-tablet@1x.jpg");
     background-image: image-set(
       url("../img/bg_header-tablet@2x.avif") type("image/avif") 2x,
