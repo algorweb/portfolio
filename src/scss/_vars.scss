@@ -1,24 +1,14 @@
-// если вы хотите использовать sass-переменные - удалите root
-// colors
-// :root {
-//   // base
-//   --font-family: "Open Sans", sans-serif;
-//   --content-width: 1170px;
-//   --container-offset: 15px;
-//   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
-
-//   // colors
-//   --light-color: #fff;
-// }
-
 $accent-color: #2c303b;
 $main-color: #2c303b;
 $text-color: #2b303c;
 $button-color: #bec1c8;
 
 // Media
+$x-large-desktop: 1440px;
+$large-desktop: 1200px;
 $desktop: 1124px;
 $tablet: 768px;
+$mobile: 576px;
 
 // Retina
 $retina-dpi: 144dpi;
@@ -36,7 +26,7 @@ $width-second-block-desktop: 62%;
 $gatter-out-mobile: 10px;
 $gatter-in-mobile: 10px;
 $gatter-out-tablet: 40px;
-$gatter-in-tablet: 20px;
+$gatter-in-tablet: 40px;
 $gatter-out-desktop: 15%;
 $gatter-in-desktop: 10%;
 

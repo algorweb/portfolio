@@ -1,6 +1,10 @@
 .projects {
   position: relative;
 
+  &__container {
+    position: relative;
+  }
+
   &__description {
     position: relative;
   }
@@ -13,9 +17,11 @@
   &__item {
     position: relative;
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 100%;
     overflow: hidden;
+    margin-bottom: 40px;
     max-width: none;
+    border: 1px solid #bec1c8;
   }
 
   &__link {
@@ -86,6 +92,15 @@
 
   &__details-text {
     margin-left: 10px;
+  }
+}
+
+@media (min-width: $mobile) {
+  .projects {
+    &__item {
+      flex-basis: 50%;
+      margin-bottom: 0;
+    }
   }
 }
 

@@ -47,13 +47,13 @@
     margin: 0;
     padding: 0;
     padding-top: 49px;
-    padding-left: 50px;
+    padding-left: 0;
     color: $button-color;
   }
 
   &__item {
     margin-bottom: 15px;
-    width: 40%;
+    width: 70%;
   }
 
   &__link {
@@ -61,7 +61,21 @@
     display: flex;
     width: auto;
     color: #2b303c;
-    transition: transform 0.5s;
+    transition: color 0.3s;
+
+    svg {
+      margin-right: 10px;
+    }
+
+    &:hover {
+      color: #bec1c8;
+      transition: color 0.3s;
+
+      svg {
+        fill: #bec1c8;
+        transition: fill 0.3s;
+      }
+    }
   }
 
   &__social {
@@ -73,30 +87,6 @@
     color: $button-color;
     transition-property: transform;
     transition-duration: 0.5s;
-
-    &::after {
-      content: "";
-      position: absolute;
-      left: 33px;
-      top: 50%;
-      display: block;
-      width: 25px;
-      height: 1px;
-      background-color: $text-color;
-      animation-name: strechin;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
-    }
-
-    &:hover {
-      transform: translateX(-15px);
-    }
-
-    &:hover::after {
-      animation-name: strechout;
-      animation-duration: 0.5s;
-      animation-fill-mode: forwards;
-    }
   }
 
   &__name,
@@ -142,26 +132,6 @@
   }
 }
 
-@keyframes strechin {
-  from {
-    width: 40px;
-  }
-
-  to {
-    width: 25px;
-  }
-}
-
-@keyframes strechout {
-  from {
-    width: 25px;
-  }
-
-  to {
-    width: 40px;
-  }
-}
-
 @media (min-width: $tablet) {
   .contacts {
     &__wrap {
@@ -173,6 +143,7 @@
 
     &__items {
       flex-direction: column;
+      padding-left: 50px;
     }
 
     &__form,

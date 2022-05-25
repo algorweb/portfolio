@@ -35,6 +35,12 @@ h6 {
   font-family: "Montserrat", "Arial", sans-serif;
 }
 
+.picture {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
 img {
   height: auto;
   max-width: 100%;
@@ -106,7 +112,11 @@ p {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1140px;
+  max-width: 1440px;
+
+  @media (min-width: $tablet) {
+    padding: 0;
+  }
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -136,6 +146,7 @@ p {
 }
 
 .gl-description-right {
+  overflow: hidden;
   padding: $gatter-top-mobile $gatter-out-mobile $gatter-bottom-mobile $gatter-in-mobile;
   max-width: 100%;
   box-sizing: border-box;
@@ -146,12 +157,31 @@ p {
     width: $width-second-block-tablet;
   }
 
+  // @media (min-width: $desktop) {
+  //   padding-top: $gatter-top-desktop;
+  //   padding-right: $gatter-out-desktop;
+  //   padding-left: $gatter-in-desktop;
+  //   width: $width-second-block-desktop;
+  // }
+
   @media (min-width: $desktop) {
-    padding-top: $gatter-top-desktop;
-    padding-right: $gatter-out-desktop;
-    padding-left: $gatter-in-desktop;
-    width: $width-second-block-desktop;
+    padding: 60px;
+    width: 62%;
   }
+
+  // @media (min-width: $large-desktop) {
+  //   padding-top: $gatter-top-desktop;
+  //   padding-right: $gatter-out-desktop;
+  //   padding-left: $gatter-in-desktop;
+  //   width: $width-second-block-desktop;
+  // }
+
+  // @media (min-width: $x-large-desktop) {
+  //   padding-top: $gatter-top-desktop;
+  //   padding-right: $gatter-out-desktop;
+  //   padding-left: $gatter-in-desktop;
+  //   width: $width-second-block-desktop;
+  // }
 }
 
 .gl-description-left {
