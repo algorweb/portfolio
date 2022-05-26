@@ -1,43 +1,56 @@
 <header id="home" class="page-header">
-  <div class="page-header__title container">
-    <h1 class="page-header__name">Я Александр Горощенко</h1>
-    <h2 class="page-header__text">Html-Верстальщик</h2><a href="#projects"
-      class="page-header__button btn btn--border-color-white">Проекты</a>
-  </div>
-  <div class="page-header__social container">
-    <ul class="social">
-      <li class="social__item">
-        <a href="mailto:a.goroshchenko@yandex.ru" class="social__link">
-          <span class="visually-hidden">Ссылка на email</span>
-          <svg class="social__icon" width="16" height="16">
-            <use xlink:href="img/sprite.svg#email-icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="http://vk.com/id345972020" class="social__link">
-          <span class="visually-hidden">Ссылка на ВКонтакте</span>
-          <svg class="social__icon" width="16" height="16">
-            <use xlink:href="img/sprite.svg#vk-icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="https://t.me/+79384677815" class="social__link">
-          <span class="visually-hidden">Ссылка на Telegram</span>
-          <svg class="social__icon" width="16" height="16">
-            <use xlink:href="img/sprite.svg#telegram-icon"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social__item">
-        <a href="viber://chat?number=+380501929567" class="social__link">
-          <span class="visually-hidden">Ссылка на Viber</span>
-          <svg class="social__icon" width="16" height="16">
-            <use xlink:href="img/sprite.svg#viber-icon"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
+  <picture class="page-header__picture">
+    <source srcset="../img/bg_header-mobile.avif" media="(max-width: 576px)" type="image/avif">
+    <source srcset="../img/bg_header-mobile.webp" media="(max-width: 576px)" type="image/webp">
+    <source srcset="../img/bg_header-mobile.jpg" media="(max-width: 576px)" type="image/jpeg">
+    <source srcset="../img/bg_header-tablet.avif" media="(max-width: 768px)" type="image/avif">
+    <source srcset="../img/bg_header-tablet.webp" media="(max-width: 768px)" type="image/webp">
+    <source srcset="../img/bg_header-tablet.jpg" media="(max-width: 768px)" type="image/jpeg">
+    <source srcset="../img/bg_header-desktop.avif" type="image/avif">
+    <source srcset="../img/bg_header-desktop.webp" type="image/webp">
+    <img src="../img/bg_header-desktop.jpg" class="page-header__img" width="1920" height="1280" alt="На заставке нарисованы ноутбук клавиатура цветок и ркчка.">
+  </picture>
+  <div class="page-header__wrap-info">
+    <div class="page-header__title container">
+      <h1 class="page-header__name">Я Александр Горощенко</h1>
+      <h2 class="page-header__text">Html-Верстальщик</h2><a href="#projects"
+        class="page-header__button btn">Проекты</a>
+    </div>
+    <div class="page-header__social container">
+      <ul class="social">
+        <li class="social__item">
+          <a href="mailto:a.goroshchenko@yandex.ru" class="social__link">
+            <span class="visually-hidden">Ссылка на email</span>
+            <svg class="social__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#email-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="http://vk.com/id345972020" class="social__link">
+            <span class="visually-hidden">Ссылка на ВКонтакте</span>
+            <svg class="social__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://t.me/+79384677815" class="social__link">
+            <span class="visually-hidden">Ссылка на Telegram</span>
+            <svg class="social__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#telegram-icon"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="viber://chat?number=+380501929567" class="social__link">
+            <span class="visually-hidden">Ссылка на Viber</span>
+            <svg class="social__icon" width="16" height="16">
+              <use xlink:href="img/sprite.svg#viber-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
 </header>

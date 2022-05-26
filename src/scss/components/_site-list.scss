@@ -5,22 +5,26 @@
   margin: 0;
   padding: 0;
 
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
   &__link {
     display: block;
     border-bottom: 2px solid transparent;
-    padding: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     box-sizing: border box;
-    font-family: "Montserrat", "Arial", sans-serif;
     font-weight: 700;
     font-size: 16px;
     text-decoration: none;
-    color: $button-color;
+    color: #2b303c;
     transition: all 0.4s ease 0s;
     cursor: pointer;
 
     &:hover,
     &:active {
-      border-bottom: 2px solid $text-color;
+      border-bottom: none;
     }
   }
 }
@@ -39,6 +43,11 @@
 
     &__link {
       font-size: 12px;
+
+      &:hover,
+      &:active {
+        border-bottom: 2px solid $text-color;
+      }
     }
   }
 }

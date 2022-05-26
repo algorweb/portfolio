@@ -19,6 +19,13 @@ import './_components';
     }
   };
 
+  navMain.addEventListener('click', (evt) => {
+    if (evt.target.classList.contains('site-list__link')) {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
+
   document.addEventListener('mousedown', onNavMainOutPress);
 
   navToggle.addEventListener('click', function () {
